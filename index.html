@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Zyan — Home · Pouring Comfort in Every Cup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,450;0,500;0,600;1,300;1,450;1,500;1,600&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+  <div class="nav-wrap">
+    <div class="logotype nav-logo"><a href="index.html"><img src="image/Logo.png" alt="Cafe Zyan"></a></div>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu" id="toggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="image/Hero.png" alt="A warmly lit neighborhood coffee bar at dawn">
+  <div class="hero-inner">
+    <div class="eyebrow">Specialty coffee · est. morning ritual</div>
+    <h1>Pouring Comfort<br>in <em>Every Cup</em></h1>
+    <p>Cafe Zyan — MacArthur Hwy, Angeles, 2009 Pampanga · open 6am – 6pm</p>
+    <div class="scroll-cue"><span class="l"></span>Scroll</div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-wrap">
+    <!-- <div class="stat"><div class="num"><em>03</em></div><div class="label">Brew Methods</div></div>
+    <div class="stat"><div class="num"><em>07</em></div><div class="label">Bean Origins</div></div>
+    <div class="stat"><div class="num"><em>16h</em></div><div class="label">Cold Brew Steep</div></div>
+    <div class="stat"><div class="num"><em>6AM</em></div><div class="label">First Pour Daily</div></div> -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text reveal">
+      <span class="tag">Welcome</span>
+      <h2>A small bar with a stubborn<br>belief in slow coffee.</h2>
+      <p class="lede">Cafe Zyan is a specialty coffee bar on Mercer Lane. We source in small lots, rotate our pour-over list weekly, and bake everything in the case each morning — because coffee tastes better when nobody's rushing it.</p>
+      <div class="stat-note">Six days of quiet · one even quieter on Mondays</div>
+      <a class="btn" href="menu.html" style="margin-top:28px;">See the Menu</a>
+    </div>
+    <div class="panel reveal d1">
+      <img src="image/pouring coffee.png" alt="Barista pulling espresso on a chrome machine" style="aspect-ratio:5/6; max-height:520px;">
+      <div class="caption">／ House espresso, bar one</div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="text reveal">
+      <span class="tag">Visit</span>
+      <h2>Find us on MacArthur Hwy.</h2>
+      <p class="lede">A small bar in the heart of Angeles City. Come early for the quiet, come late for the regulars. Delivery available nearby.</p>
+      <div class="stat-note">Open daily, 6am – 6pm</div>
+      <div class="about-values" style="margin-top:30px;">
+        <div class="value"><span class="vn">Menu</span><span class="vt">espresso, cold bar &amp; more</span></div>
+        <div class="value"><span class="vn">Location</span><span class="vt">MacArthur Hwy, Angeles, 2009 Pampanga</span></div>
+        <div class="value"><span class="vn">About</span><span class="vt">Cafe Zyan is a modern sanctuary where rich coffee culture meets everyday 
+          connection. What started as a small dream to serve premium brews has evolved into an expanded, multi-concept hub featuring dedicated 
+          indoor workspaces for creators and vibrant outdoor spaces to unwind. We are a place where local flavor, comfort, and creativity 
+          come together every day. We hope you enjoy our premium pastries and drinks!</span></div>
+      </div>
+      <!-- <a class="btn ghost" href="#top" style="margin-top:32px;">Back to top</a> -->
+    </div>
+    <div class="panel reveal d1">
+      <img src="image/Barista-2.png" alt="A barista handing a latte over the counter to a customer" style="aspect-ratio:5/6; max-height:520px;">
+      <div class="caption">／ service, front counter</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wrap">
+    <div>
+      <div class="logotype">Cafe Zy<span>an</span></div>
+      <p>A small specialty coffee bar. We source in small lots, brew to order, and try not to rush your morning.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Address</h4>
+      <p>MacArthur Hwy, Angeles, 2009 Pampanga</p>
+      <p>Angeles City, PH</p>
+      <p>Open 6am – 6pm daily</p>
+    </div>
+    <div class="footer-col">
+      <h4>Business Info</h4>
+      <a href="mailto:hello@zyancafe.com">hello@zyancafe.com</a>
+      <a href="#">@zyancafe</a>
+      <a href="#">+63 900 000 0000</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 CAFE ZYAN — POURING COMFORT IN EVERY CUP</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('toggle');
+  const navList = document.getElementById('nav-list');
+  toggle.addEventListener('click', ()=>{
+    navList.classList.toggle('open');
+    document.body.classList.toggle('menu-open');
+  });
+  navList.querySelectorAll('a').forEach(a=>{
+    a.addEventListener('click', ()=>{
+      navList.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    });
+  });
+
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); }
+    });
+  }, {threshold:.15});
+  els.forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
