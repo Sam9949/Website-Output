@@ -13,7 +13,13 @@
 
 <header id="top">
   <div class="nav-wrap">
-    <div class="logotype nav-logo"><a href="index.html"><img src="image/Logo.png" alt="Cafe Zyan"></a></div>
+
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="image/Logo.png" alt="Cafe Zyan">
+      </a>
+    </div>
+
     <nav>
       <ul id="nav-list">
         <li><a href="index.html">Home</a></li>
@@ -22,9 +28,20 @@
         <li><a href="about.html" class="active">About Us</a></li>
       </ul>
     </nav>
-    <button class="menu-toggle" aria-label="Menu" id="toggle">
-      <span></span><span></span><span></span>
+
+    <button
+      class="menu-toggle"
+      id="toggle"
+      aria-label="Toggle navigation menu"
+      aria-controls="nav-list"
+      aria-expanded="false"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
+
   </div>
 </header>
 
