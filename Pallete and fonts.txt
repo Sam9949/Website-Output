@@ -1,0 +1,19 @@
+Main:
+Seashell `#FEFAF6` (main background)
+Beige `#EADBC8` (secondary section background)
+Orange `#DAC0A3` (headings)
+Fibonacci Blue `#102C57` (hero/footer background)
+
+Accent:
+Renanthera Orchid `#860A35` (primary CTA/buttons)
+Violet Red `#AF2655` (CTA hover state/links)
+Olive-Lime `#A3B763` (highlights/stat numbers)
+
+Text/Border:
+Ink `#000000` (text color)
+Line `#E1DCC9` (border color)
+
+Font:
+Fraunces (headings — serif, used for `h1`, `h2`, logo, menu item names)
+Work Sans (body — used as the base `body` font)
+Space Mono (accents — used for tags, eyebrow text, prices, stats, nav labels, footer labels)
