@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Zyan — About Us · Pouring Comfort in Every Cup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,450;0,500;0,600;1,300;1,450;1,500;1,600&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+  <div class="nav-wrap">
+    <div class="logotype nav-logo"><a href="index.html"><img src="image/Logo.png" alt="Cafe Zyan"></a></div>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu" id="toggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero" style="padding:120px 0 60px;">
+  <div class="container">
+    <span class="tag">03 — About Us</span>
+    <h2 style="font-family:'Fraunces', serif; font-weight:500; font-size:clamp(34px,4.5vw,52px); color:var(--orange); line-height:1.05; margin-bottom:18px;">We'd rather pour one cup well<br>than a hundred quickly.</h2>
+    <p class="lede" style="font-size:15px; color:#4a4438; max-width:46ch;">Zyan opened as a single espresso bar and a stubborn belief that coffee tastes better when nobody's rushing it.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text reveal">
+      <span class="tag">Our story</span>
+      <h2>A bar built on patience.</h2>
+      <p class="lede">We source in small lots, rotate our pour-over list weekly, and bake everything in the case each morning before opening. The menu stays short on purpose — every drink we pour, we've made a hundred times.</p>
+      
+      <div class="about-values">
+        <div class="value"><span class="vn">Care</span><span class="vt">We serve freshly brewed coffee made with care</span></div>
+        <div class="value"><span class="vn">Fresh</span><span class="vt">Every cup is crafted with quality ingredients.</span></div>
+        <div class="value"><span class="vn">Warm</span><span class="vt">Enjoy a cozy and relaxing atmosphere.</span></div>
+      </div>
+
+        <div class="stats">
+          <!-- <div class="stats-wrap">
+            <div class="stat"><div class="num"><em>03</em></div><div class="label">Brew Methods</div></div>
+            <div class="stat"><div class="num"><em>07</em></div><div class="label">Bean Origins</div></div>
+            <div class="stat"><div class="num"><em>16h</em></div><div class="label">Cold Brew Steep</div></div>
+            <div class="stat"><div class="num"><em>6AM</em></div><div class="label">First Pour Daily</div></div>
+
+            <div class="stat"><div class="num"><em>06</em></div><div class="label">open for business</div></div>
+            <div class="stat"><div class="num"><em>07</em></div><div class="label">Bean Origins</div></div>
+            <div class="stat"><div class="num"><em>16h</em></div><div class="label">Cold Brew Steep</div></div>
+            <div class="stat"><div class="num"><em>6AM</em></div><div class="label">First Pour Daily</div></div>
+            
+          </div> -->
+
+          <div class="about-values">
+          <div class="value"><span class="vn">Join us</span><span class="vt">Every cup of coffee is prepared with care, passion, and attention to detail. From choosing the right ingredients to making sure every cup has the perfect taste and aroma, 
+            we put our best effort into every drink we serve. We believe that coffee is more than just a beverage; it is a simple way to bring comfort, happiness, and a little break from a busy day. Our goal is to make every 
+            customer feel welcome and enjoy a warm, relaxing, and memorable coffee experience with every visit. </span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel reveal d1">
+      <img src="./image/Barista.png" alt="A barista handing a latte over the counter to a customer" style="aspect-ratio:5/6; max-height:520px;">
+      <div class="caption">／ service, front counter</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wrap">
+    <div>
+      <div class="logotype">Cafe Zy<span>an</span></div>
+      <p>A small specialty coffee bar. We source in small lots, brew to order, and try not to rush your morning.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Address</h4>
+      <p>MacArthur Hwy, Angeles, 2009 Pampanga</p>
+      <p>Angeles City, PH</p>
+      <p>Open 6am – 6pm daily</p>
+    </div>
+    <div class="footer-col">
+      <h4>Business Info</h4>
+      <a href="mailto:hello@zyancafe.com">hello@zyancafe.com</a>
+      <a href="#">@zyancafe</a>
+      <a href="#">+63 900 000 0000</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 CAFE ZYAN — POURING COMFORT IN EVERY CUP</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('toggle');
+  const navList = document.getElementById('nav-list');
+  toggle.addEventListener('click', ()=>{
+    navList.classList.toggle('open');
+    document.body.classList.toggle('menu-open');
+  });
+  navList.querySelectorAll('a').forEach(a=>{
+    a.addEventListener('click', ()=>{
+      navList.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    });
+  });
+
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); }
+    });
+  }, {threshold:.15});
+  els.forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
